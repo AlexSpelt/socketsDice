@@ -1,0 +1,27 @@
+{
+  "name": "sockets",
+  "version": "1.0.0",
+  "description": "this is a test app to learn how to use sockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexSpelt/socketsDice.git"
+  },
+  "keywords": [
+    "sockets",
+    "dice"
+  ],
+  "author": "Alex Spelt",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AlexSpelt/socketsDice/issues"
+  },
+  "homepage": "https://github.com/AlexSpelt/socketsDice#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
