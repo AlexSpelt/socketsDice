@@ -3,9 +3,9 @@ import { listen as socket } from 'socket.io';
 import { socketAPI } from './socketAPI';
 
 const app: Application = express();
-const port: number = 80;
+const port: number = 86;
 
-app.use(express.static('public'));
+app.use('/', express.static('public'));
 
 const server = app.listen(port, () => console.log(`server started on port ${port}`));
 

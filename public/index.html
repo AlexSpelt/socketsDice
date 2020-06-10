@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll dice Together</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3 text-center">
+                Roll dice!
+                <img src="/images/dice.svg" width="200px" alt="dice image" class="img-fluid d-none d-md-inline-block">
+                <img src="/images/dice.svg" width="120px" alt="dice image" class="img-fluid d-inline-block d-md-none">
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-12">
+                <p class="text-center" id="msg">Click here to roll the dice</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+                <button class="btn btn-primary" onclick="rollDice()">Dice</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mb-5">
+                <img src="/images/dice-6.png" id="dice1" width="200px" alt="dice image" class="img-fluid mx-2">
+                <img src="/images/dice-6.png" id="dice2" width="200px" alt="dice image" class="img-fluid mx-2">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="nameRetriever" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="px-3 pt-3">
+                    <h5 class="modal-title w-100 mb-2">What is your name?</h5>
+                    <input type="text" name="name" id="name" placeholder="name" class="form-control" minlength="3" maxlength="20" required>
+                    <small class="pl-1">Put in at least 3 characters</small>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <button type="submit" class="btn btn-primary">Play</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/dice.js"></script>
+</body>
+</html>
